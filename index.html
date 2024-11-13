@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>DIVISÃO DE ASSUNTOS ESTUDANTIS</h1>
+    </div>
+
+    <!-- Ícone de menu para abrir a barra lateral -->
+    <img src="imgs/Barrasbrancas.png" alt="Menu" class="menu-icon" id="menuIcon">
+
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="index.html" class="logo-link">
+            <img src="imgs/Divas.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <a href="cadastrosauxilioalimentacao.html" class="sidebaroption"><img src="imgs/Auxilioalimentacao.png" alt="Ícone 1" class="sidebar-icon"> AUXÍLIO ALIMENTAÇÃO</a>
+        <a href="bolsapermanencia.html" class="sidebaroption"><img src="imgs/Bolsapermanencia.png" alt="Ícone 2" class="sidebar-icon"> BOLSA PERMANÊNCIA</a>
+        <a href="pfee.html" class="sidebaroption"><img src="imgs/pfee.png" alt="Ícone 3" class="sidebar-icon"> PFEE</a>
+        <a href="Cadastrosrefeicoes.html" class="sidebaroption"><img src="imgs/Refeicoessubsidiadas.png" alt="Ícone 3" class="sidebar-icon"> REFEIÇÕES SUBSIDIADAS</a>
+    </div>
+        <div class="main-container">
+            <div class="insert-container">
+                <div class="cadastro-form" id="cadastroForm">
+                    <div class="form-row">
+                        <label for="name" class="titulo2">Nome:</label>
+                        <input type="text" id="name" placeholder="Digite o nome">
+                        <label for="name" class="titulo2">CPF:</label>
+                        <input type="text" id="cpf" placeholder="Digite o CPF">
+                        <label for="date" class="titulo2">Data:</label>
+                        <input type="date" id="date">
+                        <label class="titulo2">Programas:</label>
+                        <select id="selectedPrograms">
+                        <option value="" disabled selected>Selecione o programa</option>
+                        <option value="Auxílio Alimentação">Auxílio Alimentação</option>
+                        <option value="Bolsa Permanência">Bolsa Permanência</option>
+                        <option value="PFEE">PFEE</option>
+                        <option value="Refeições Subsidiadas">Refeições Subsidiadas</option>
+                        </select>
+                        <div class="programas-container">
+                        </div>
+                    
+                <button id="insertBtn">INSERIR</button>
+            </div>
+        </div>
+            
+    </div>
+        <div class="cadastrados-container">
+            <h2 class="titulo">CADASTRADOS NOS PROGRAMAS</h2>
+            <table id="cadastroTable" class="cadastro-table">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Pesquisar...">
+                    <button id="searchBtn">PESQUISAR</button>
+                </div>                
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Data de Entrada</th>
+                        <th>Programa Cadastrado</th>
+                        <th>Participa do Programa</th>
+                        <th>Data de Saída</th>
+                    </tr>
+                </thead>
+                <tbody id="cadastroList">
+                
+                </tbody>
+            </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

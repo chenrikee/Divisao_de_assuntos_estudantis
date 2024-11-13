@@ -1,0 +1,166 @@
+body {
+    background-color: #dbdbdb; /* Fundo cinza claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #000; /* Fundo preto */
+    padding: 15px 0; /* Espaçamento interno */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Ocupa 100% da largura da página */
+    position: absolute; /* Garante que a barra permaneça no topo sem rolar */
+    top: 0; /* Fica no topo da página */
+    left: 0; /* Começa do canto esquerdo */
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+.sidebar {
+    height: 100%; /* Barra ocupa toda a altura da página */
+    width: 0; /* Inicialmente invisível */
+    position: fixed; /* Fixa no lado esquerdo */
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Fundo branco */
+    overflow-x: hidden; /* Sem barra de rolagem horizontal */
+    transition: 0.5s; /* Animação suave */
+    padding-top: 60px; /* Espaço no topo para não sobrepor a navbar */
+}
+
+.sidebar a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000; /* Texto preto */
+    display: flex; /* Alinha imagem e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    transition: 0.3s;
+}
+
+.sidebaroption:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none; /* Remove fundo do botão */
+}
+
+.sidebar-open {
+    width: 250px; /* Largura ao abrir a barra */
+}
+
+.sidebar-logo {
+    display: block;
+    width: 100%; /* Ou um valor fixo como 200px */
+    max-width: 100px; /* Largura máxima da logo */
+    margin-left: -10px;
+    margin-bottom: 30px;
+    margin-top: -40px;
+}
+
+.sidebar-icon {
+    width: 24px; /* Defina a largura da imagem */
+    height: 24px; /* Defina a altura da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    margin-left: -20px;
+}
+
+.attendance-container {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Ajusta a largura para ficar igual à div de cadastrados */
+    max-width: 1200px; /* Limita a largura máxima a 1200px */
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+.attendance-container h2 {
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#clearBtn {
+    float: right; /* Move o botão para a extrema direita */
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#clearBtn:hover {
+    background-color: #333333;
+}
+
+.attendance-container {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Adiciona uma classe de cabeçalho para alinhar o título e o botão */
+.attendance-container h2, #clearBtn {
+    display: inline-block; /* Alinha lado a lado */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+    margin: 0; /* Remove margens para evitar deslocamento */
+}
+
+.attendance-container h2{
+
+    margin-top: 20px;
+}
+
+.attendance-container #clearBtn{
+
+    margin-top: 25px;
+}

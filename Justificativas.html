@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justificativas</title>
+    <link rel="stylesheet" href="Refeições Subsidiadas/Justificativas/style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>REFEIÇÕES SUBSIDIADAS</h1>
+    </div>
+
+    <!-- Ícone de menu para abrir a barra lateral -->
+    <img src="imgs/Barrasbrancas.png" alt="Menu" class="menu-icon" id="menuIcon">
+
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="index.html" class="logo-link">
+            <img src="imgs/Divas.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <a href="Cadastrosrefeicoes.html" class="sidebaroption"><img src="imgs/Cadastros.png" alt="Ícone 1" class="sidebar-icon"> CADASTROS</a>
+        <a href="Presenças.html" class="sidebaroption"><img src="imgs/Presenças.png" alt="Ícone 2" class="sidebar-icon"> PRESENÇAS</a>
+        <a href="Justificativas.html" class="sidebaroption"><img src="imgs/Justificativas.png" alt="Ícone 2" class="sidebar-icon"> JUSTIFICATIVAS</a>
+    </div>
+
+    <div class="main-container">
+        <div class="insert-container">
+            <div class="cadastro-form" id="cadastroForm">
+                <div class="form-row">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Digite o nome">
+                    
+                    <label for="date">Data:</label>
+                    <input type="date" id="date">
+
+                    <label for="motivo">Motivo:</label>
+                    <input type="text" id="motivo" placeholder="Informe o motivo">
+                </div>
+            </div>
+            <button id="insertBtn">INSERIR</button>
+        </div>
+        <div class="cadastrados-container">
+            <button id="clearBtn">Limpar</button>
+            <h2 class="titulo">JUSTIFICATIVAS</h2>
+            <table id="cadastroTable" class="cadastro-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Justificativas</th>
+                    </tr>
+                </thead>
+                <tbody id="cadastroList">
+                    <!-- Linhas de cadastro serão inseridas aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Refeições Subsidiadas/Justificativas/script.js"></script>
+</body>
+</html>

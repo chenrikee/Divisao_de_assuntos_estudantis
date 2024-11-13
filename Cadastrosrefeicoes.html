@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" href="Refeições Subsidiadas/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>REFEIÇÕES SUBSIDIADAS</h1>
+    </div>
+
+    <!-- Ícone de menu para abrir a barra lateral -->
+    <img src="imgs/Barrasbrancas.png" alt="Menu" class="menu-icon" id="menuIcon">
+
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="index.html" class="logo-link">
+            <img src="imgs/Divas.png" alt="Logo" class="sidebar-logo">
+        </a>
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+        <a href="Cadastrosrefeicoes.html" class="sidebaroption"><img src="imgs/Cadastros.png" alt="Ícone 1" class="sidebar-icon"> CADASTROS</a>
+        <a href="Presenças.html" class="sidebaroption"><img src="imgs/Presenças.png" alt="Ícone 2" class="sidebar-icon"> PRESENÇAS</a>
+        <a href="Justificativas.html" class="sidebaroption"><img src="imgs/Justificativas.png" alt="Ícone 3" class="sidebar-icon"> JUSTIFICATIVAS</a>
+    </div>
+
+    <div class="main-container">
+        <div class="cadastrados-container">
+            <h2 class="titulo">CADASTRADOS</h2>
+            <table id="cadastroTable" class="cadastro-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Data de Entrada</th>
+                        <th>Marmitas Consumidas</th>
+                    </tr>
+                </thead>
+                <tbody id="cadastroList">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Refeições Subsidiadas/script.js"></script>
+</body>
+</html>
